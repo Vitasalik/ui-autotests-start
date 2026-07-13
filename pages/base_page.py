@@ -9,3 +9,5 @@ class BasePage:
 
     def check_current_url(self, expected_url: str) -> None:
         expect(self.page).to_have_url(expected_url)
+
+

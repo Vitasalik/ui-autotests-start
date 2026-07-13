@@ -15,5 +15,6 @@ def test_authorization_wrong(user_data_wrong,
     authorization_page.fill_authorization_form(email=user_data_wrong['email'],
                                                password=user_data_wrong['password'])
     authorization_page.click_login_button()
-    Page.wait_for_timeout(5000)
+    
+
 

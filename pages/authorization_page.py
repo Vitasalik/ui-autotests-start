@@ -7,10 +7,10 @@ class AuthorizationPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self.email_input = page.locator('//div[@data-testid="login-form-email-input"]//div//input')
-        self.password_input = page.locator('//div[@data-testid="login-form-password-input"]//div//input')
-        self.login_button = page.locator('//button[@data-testid="login-page-login-button"]')
-        self.wrong_email_or_password_alert = page.locator('//div[@data-testid="login-page-wrong-email-or-password-alert"]')
+        self.email_input = page.get_by_test_id("login-form-email-input").locator("input")
+        self.password_input = page.get_by_test_id("login-form-password-input").locator("input")
+        self.login_button = page.get_by_test_id("login-page-login-button")
+        self.wrong_email_or_password_alert = page.get_by_test_id("login-page-wrong-email-or-password-alert")
 
     def open_page(self) -> None:
         super().open(self.URL)
@@ -26,3 +26,10 @@ class AuthorizationPage(BasePage):
 
     def click_login_button(self) -> None:
         self.login_button.click()
+
+    def check_wrong_alert(self) -> None:
+        expect(self.wrong_email_or_password_alert).to_be_visible()
+        expect(self.wrong_email_or_password_alert).to_have_text("Wrong email or password")
+
+
+
