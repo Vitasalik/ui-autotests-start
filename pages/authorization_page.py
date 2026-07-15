@@ -1,7 +1,5 @@
-from playwright.sync_api import Page, expect, Response
+from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from tests.test_events import log_response
-
 
 class AuthorizationPage(BasePage):
     URL = "https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login"
@@ -34,8 +32,4 @@ class AuthorizationPage(BasePage):
         expect(self.wrong_email_or_password_alert).to_have_text("Wrong email or password")
 
 
-    def log_response(response: Response) -> None:
-        print(f"Response: {response.url}, {response.status}")
 
-    def print_log_response(self) -> None:
-        self.page.on("response", log_response)
