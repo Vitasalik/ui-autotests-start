@@ -1,6 +1,5 @@
 from playwright.sync_api import Page, expect, Response
 from pages.base_page import BasePage
-from tests.test_events import log_response
 
 
 class AuthorizationPage(BasePage):
