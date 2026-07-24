@@ -5,6 +5,10 @@ from pages.authorization_page import AuthorizationPage
 from pages.registration_page import RegistrationPage
 from pages.dashboard_page import DashboardPage
 
+pytest_plugins = (
+    "fixtures.browsers"
+)
+
 @pytest.fixture
 def user_data() -> dict[str, str]:
     return {
