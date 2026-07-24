@@ -32,9 +32,8 @@ class AuthorizationPage(BasePage):
         expect(self.wrong_email_or_password_alert).to_be_visible()
         expect(self.wrong_email_or_password_alert).to_have_text("Wrong email or password")
 
+# def log_response(response: Response) -> None:
+#    print(f"Response: {response.url}, {response.status}")
 
-    def log_response(response: Response) -> None:
-        print(f"Response: {response.url}, {response.status}")
-
-    def print_log_response(self) -> None:
-        self.page.on("response", log_response)
+# def print_log_response(self) -> None:
+#   self.page.on("response", log_response)

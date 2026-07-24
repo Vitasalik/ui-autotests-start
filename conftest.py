@@ -9,7 +9,7 @@ from pages.dashboard_page import DashboardPage
 def user_data() -> dict[str, str]:
     return {
         "email": "user@example.com",
-        "username": "testuser",
+        "username": "testUser",
         "password": "password123"
     }
 @pytest.fixture
