@@ -7,7 +7,7 @@ class DashboardPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self.toolbar_title = page.locator("[data-testid='dashboard-toolbar-title-text']")
+        self.toolbar_title = page.get_by_test_id("dashboard-toolbar-title-text")
 
     def check_opened(self) -> None:
         self.check_current_url(self.URL)
