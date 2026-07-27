@@ -13,7 +13,7 @@ class RegistrationPage(BasePage):
         self.registration_button = page.locator("[data-testid='registration-page-registration-button']")
 
     def open_page(self) -> None:
-        super().open(self.URL)
+        super().visible(self.URL)
 
     def fill_registration_page(self, email: str, username: str, password: str) -> None:
         self.email_input.fill(email)
