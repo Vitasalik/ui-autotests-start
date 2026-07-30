@@ -16,7 +16,7 @@ class CreateCoursePage(BasePage):
         self.preview_empty_icon = page.get_by_test_id("create-course-preview-empty-view-icon")
         self.preview_empty_title = page.get_by_test_id("create-course-preview-empty-view-title-text")
         self.preview_empty_description = page.get_by_test_id("create-course-preview-empty-view-description-text")
-        self.preview_image = page.get_by_test_id("create-course-preview-image-upload-widget-preview-image")
+        self.preview_image = page.get_by_test_id('create-course-preview-image-upload-widget-input')
 
         # Блок взаимодействия с картинкой курса
         self.upload_image_icon = page.get_by_test_id("create-course-preview-image-upload-widget-info-icon")
@@ -101,27 +101,27 @@ class CreateCoursePage(BasePage):
         expect(self.create_course_description_input).to_have_text(description)
 
         expect(self.create_course_max_score_input).to_be_visible()
-        expect(self.create_course_max_score_input).to_have_text(max_score)
+        expect(self.create_course_max_score_input).to_have_value(max_score)
 
         expect(self.create_course_min_score_input).to_be_visible()
-        expect(self.create_course_min_score_input).to_have_text(min_score)
+        expect(self.create_course_min_score_input).to_have_value(min_score)
 
     def fill_create_course_form(self, title: str, description: str, estimated_time: str, max_score: str,
                                 min_score: str):
         self.create_course_title_input.fill(title)
-        expect(self.create_course_title_input).to_have_text(title)
+        expect(self.create_course_title_input).to_have_value(title)
 
         self.create_course_description_input.fill(description)
-        expect(self.create_course_description_input).to_have_text(description)
+        expect(self.create_course_description_input).to_have_value(description)
 
         self.create_course_estimate_time_input.fill(estimated_time)
-        expect(self.create_course_estimate_time_input).to_have_text(estimated_time)
+        expect(self.create_course_estimate_time_input).to_have_value(estimated_time)
 
         self.create_course_max_score_input.fill(max_score)
-        expect(self.create_course_max_score_input).to_have_text(max_score)
+        expect(self.create_course_max_score_input).to_have_value(max_score)
 
         self.create_course_min_score_input.fill(min_score)
-        expect(self.create_course_min_score_input).to_have_text(min_score)
+        expect(self.create_course_min_score_input).to_have_value(min_score)
 
     def check_visible_exercises_title(self):
         expect(self.exercises_title).to_be_visible()

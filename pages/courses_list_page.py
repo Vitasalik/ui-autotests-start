@@ -50,8 +50,8 @@ class CoursesListPage(BasePage):
 
     def check_visible_course_card(self, index: int, title: str, max_score: str, min_score: str,
                                   estimate_time: str) -> None:
-        expect(self.courses_title.nth(index)).to_be_visible()
-        expect(self.courses_title.nth(index)).to_have_text(title)
+        expect(self.course_title.nth(index)).to_be_visible()
+        expect(self.course_title.nth(index)).to_have_text(title)
 
         expect(self.course_image.nth(index)).to_be_visible()
 
