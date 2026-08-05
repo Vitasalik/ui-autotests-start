@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
 
+from components.navigation.sidebar_component import SidebarComponent
 from pages.base_page import BasePage
 from components.navigation.navbar_component import NavbarComponent
 
@@ -11,6 +12,9 @@ class CoursesListPage(BasePage):
 
         #Горизонтальный navbar
         self.navbar = NavbarComponent(page)
+
+        #Вертикальный sidebar
+        self.sidebar = SidebarComponent(page)
 
         #Заголовок и кнопка создания курса
         self.courses_title = page.get_by_test_id("courses-list-toolbar-title-text")

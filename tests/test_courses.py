@@ -1,5 +1,4 @@
-from page.models import Page
-from playwright.sync_api import sync_playwright, expect
+from playwright.sync_api import Page, expect
 import pytest
 
 from pages.courses_list_page import CoursesListPage
@@ -8,25 +7,15 @@ from pages.create_course_page import CreateCoursePage
 
 @pytest.mark.courses
 @pytest.mark.regression
-def test_empty_courses_list(chromium_page_with_state: Page):
-    chromium_page_with_state.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
+def test_empty_courses_list(courses_list_page_with_state: CoursesListPage):
+    courses_list_page_with_state.visible("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
 
-    courses_toolbar = chromium_page_with_state.get_by_test_id("courses-list-toolbar-title-text")
-    expect(courses_toolbar).to_be_visible()
-    expect(courses_toolbar).to_have_text("Courses")
+    courses_list_page_with_state.navbar.check_visible("username")
+    courses_list_page_with_state.sidebar.check_visible()
 
-    courses_empty_list_icon = chromium_page_with_state.get_by_test_id("courses-list-empty-view-icon")
-    expect(courses_empty_list_icon).to_be_visible()
-
-    courses_empty_list_title_text = chromium_page_with_state.get_by_test_id("courses-list-empty-view-title-text")
-    expect(courses_empty_list_title_text).to_be_visible()
-    expect(courses_empty_list_title_text).to_have_text("There is no results")
-
-    courses_empty_list_description_text = chromium_page_with_state.get_by_test_id(
-        "courses-list-empty-view-description-text")
-    expect(courses_empty_list_description_text).to_be_visible()
-    expect(courses_empty_list_description_text).to_have_text(
-        "Results from the load test pipeline will be displayed here")
+    courses_list_page_with_state.check_visible_courses_title()
+    courses_list_page_with_state.check_visible_create_course_button()
+    courses_list_page_with_state.check_visible_empty_list()
 
 
 @pytest.mark.courses
