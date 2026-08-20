@@ -1,4 +1,6 @@
-from playwright.sync_api import Page, expect
+import re
+
+from playwright.sync_api import Page
 
 from components.charts.chart_view_copmponent import ChartViewComponent
 from components.dashboard.dashboard_toolbar_view_component import DashboardToolbarViewComponent
@@ -21,6 +23,6 @@ class DashboardPage(BasePage):
         self.scores_chart = ChartViewComponent(page, "scores", "scatter")
         self.activities_chart = ChartViewComponent(page, "activities", "line")
 
-    def check_opened(self) -> None:
-        self.check_current_url(self.URL)
+    def check_opened(self):
+        self.check_current_url(re.compile(".*/#/dashboard"))
 
