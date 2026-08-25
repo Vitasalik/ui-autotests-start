@@ -7,6 +7,8 @@ from components.dashboard.dashboard_toolbar_view_component import DashboardToolb
 from components.navigation.navbar_component import NavbarComponent
 from components.navigation.sidebar_component import SidebarComponent
 from pages.base_page import BasePage
+from tools.routes import AppRoute
+
 
 class DashboardPage(BasePage):
     URL = "https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/dashboard"
@@ -24,5 +26,5 @@ class DashboardPage(BasePage):
         self.activities_chart = ChartViewComponent(page, "activities", "line")
 
     def check_opened(self):
-        self.check_current_url(re.compile(".*/#/dashboard"))
+        self.check_current_url(re.compile(AppRoute.DASHBOARD))
 
