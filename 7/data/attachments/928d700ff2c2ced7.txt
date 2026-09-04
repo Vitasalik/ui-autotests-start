@@ -1,0 +1,135 @@
+INFO     BASE_PAGE:base_page.py:17 Opening the url "AppRoute.CREATE_COURSES"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-title-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Title" to value "Java"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-title-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Title" has value "Java"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Estimated Time" to value "10 weeks"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Estimated Time" has value "10 weeks"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-description-input" at index "0"
+INFO     TEXT_AREA:textarea.py:26 Fill textarea "Description" to value "Java"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-description-input" at index "0"
+INFO     TEXT_AREA:textarea.py:36 Checking that textarea "Description" has value "Java"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Max Score" to value "200"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Max Score" has value "200"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Min Score" to value "30"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Min Score" has value "30"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-input" at index "0"
+INFO     FILE_INPUT:file_input.py:18 Set file "testdata/files/java.png" to the file input "Upload input"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-icon" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that icon "Image upload icon" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Title" has text "Tap on "Upload image" button to select file"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Description" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Description" has text "Recommended file size 540X300"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Upload button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-remove-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Remove button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Upload button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-toolbar-create-course-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:42 Clicking "button" with "Create Course"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Title" has text "Courses"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=courses-list-toolbar-create-course-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Create Course button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-widget-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-widget-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Title" has text "Java"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-preview-image" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that image "Preview" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-max-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Max score" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-max-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Max score" has text "Max score: 200"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-min-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Min score" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-min-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Min score" has text "Min score: 30"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-estimated-time-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Estimated time" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-estimated-time-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Estimated time" has text "Estimated time: 10 weeks"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-view-menu-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:42 Clicking "button" with "Menu"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-view-edit-menu-item-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Edit" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-view-edit-menu-item-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:42 Clicking "button" with "Edit"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-title-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Title" to value "Python"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-title-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Title" has value "Python"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Estimated Time" to value "20 weeks"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Estimated Time" has value "20 weeks"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-description-input" at index "0"
+INFO     TEXT_AREA:textarea.py:26 Fill textarea "Description" to value "Python"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-description-input" at index "0"
+INFO     TEXT_AREA:textarea.py:36 Checking that textarea "Description" has value "Python"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Max Score" to value "100"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Max Score" has value "100"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+INFO     INPUT:input.py:27 Fill input "Min Score" to value "20"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+INFO     INPUT:input.py:37 Checking that input "Min Score" has value "20"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-input" at index "0"
+INFO     FILE_INPUT:file_input.py:18 Set file "testdata/files/python.png" to the file input "Upload input"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-icon" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that icon "Image upload icon" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Title" has text "Tap on "Upload image" button to select file"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Description" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Description" has text "Recommended file size 540X300"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Upload button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-remove-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Remove button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Upload button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=create-course-toolbar-create-course-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:42 Clicking "button" with "Create Course"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Title" has text "Courses"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=courses-list-toolbar-create-course-button" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that button "Create Course button" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-widget-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Title" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-widget-title-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Title" has text "Python"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-preview-image" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that image "Preview" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-max-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Max score" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-max-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Max score" has text "Max score: 100"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-min-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Min score" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-min-score-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Min score" has text "Min score: 20"
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-estimated-time-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:52 Checking that text "Estimated time" is visible
+INFO     BASE_ELEMENT:base_element.py:24 Getting locator with "data-testid=course-estimated-time-info-row-view-text" at index "0"
+INFO     BASE_ELEMENT:base_element.py:62 Checking that text "Estimated time" has text "Estimated time: 20 weeks"
